@@ -6,7 +6,7 @@ There are no command line parameters. The target ping address must be edited in 
 
 ## Requirements
 
-1. A PC or device running Linux (it may work on Windows but it was not tested). The commands below were tested with a Raspberry Pi OS
+1. A PC or device running Linux (it may work on Windows but it was not tested). The commands below were tested with on Raspberry Pi OS
 
 2. Install or update `python3`
 ```
