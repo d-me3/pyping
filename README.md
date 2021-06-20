@@ -2,9 +2,7 @@
 
 Simple python script to log lost packets of an internet connection to CSV format. Excel Pivot Charts can later be used to analyze data.
 
-There is no command line parameter.
-
-The target ping address must be edited in the source code.
+There are no command line parameters. The target ping address must be edited in the source code.
 
 ## Requirements
 
