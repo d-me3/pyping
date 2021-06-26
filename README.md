@@ -30,6 +30,7 @@ sudo pip3 install icmplib
 (...)
 gblPingTarget = "8.8.8.8"
 (...)
+```
 
 ## Usage examples
 
