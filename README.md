@@ -26,6 +26,10 @@ sudo pip3 install icmplib
 ```
 
 5. Edit `pyping.py` and put the target ping address in the variable `gblPingTarget`
+```
+(...)
+gblPingTarget = "8.8.8.8"
+(...)
 
 ## Usage examples
 
