@@ -1,6 +1,6 @@
 # pyping
 
-Simple python script to report lost packets of an internet connection in CSV format. If the output is redirected to a CSV file, Excel Pivot Charts can later be used to analyze data.
+`pyping` is a simple python script to report lost packets of an internet connection in CSV format. If the output is redirected to a CSV file, Excel Pivot Charts can later be used to analyze data.
 
 There are no command line parameters. The target ping address must be edited in the source code (default target IP is Google DNS - 8.8.8.8).
 
