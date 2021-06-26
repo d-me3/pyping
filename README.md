@@ -1,6 +1,6 @@
 # pyping
 
-Simple python script to log lost packets of an internet connection to CSV format. Excel Pivot Charts can later be used to analyze data.
+Simple python script to report lost packets of an internet connection in CSV format. If output is redirected to a CSV file, Excel Pivot Charts can later be used to analyze data.
 
 There are no command line parameters. The target ping address must be edited in the source code (default target IP is Google DNS - 8.8.8.8).
 
@@ -59,4 +59,16 @@ sudo pip3 install icmplib
 
 11. **totalPctAboveAvg**: total percent of packets with a response time above 2.5 times the average
 
+## Data Analysis
 
+The output from this script can be redirected to a CSV file and opened in Excel, for example. Excel Pivot Charts is a good tool that can be used to group data and to perform some analysis.
+
+A sample Excel file is available in this repository.
+
+Below is an example of this analysis grouping by day:
+
+![Pivot Chart - Example 1](https://github.com/d-me3/pyping/raw/main/analysis-example-1.png)
+
+And a specific day can be expanded to groupd the lost packets per hour:
+
+![Pivot Chart - Example 2] (https://github.com/d-me3/pyping/raw/main/analysis-example-2.png)
