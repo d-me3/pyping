@@ -37,6 +37,8 @@ sudo pip3 install icmplib
 
 **Only lost packets** and **packets with a response time over 2.5 times the average** events are logged.
 
+### Columns
+
 1. **timestamp**: timestamp of the logged event in the format yyyy-dd-mm hh:mm:ss
 
 2. **address**: ping target IP address (as configured in the variable `gblPingTarget`)
@@ -58,6 +60,23 @@ sudo pip3 install icmplib
 10. **totalHighResponseTime**: total number of packets with the response time above 2.5 times the average response time
 
 11. **totalPctAboveAvg**: total percent of packets with a response time above 2.5 times the average
+
+###Example:
+
+```
+timestamp,address,totalSentPackets,totalLostPackets,seqLostPackets,totalPctLost,avgResponseTime,lastResponseTime,maxResponseTime,totalHighResponseTime,totalPctAboveAvg
+2021-06-11 08:58:15,8.8.8.8,1381,1,1,0.07,11.5,12.2,35.5,0,0.00    
+2021-06-11 08:58:35,8.8.8.8,1399,2,1,0.14,11.5,14.2,35.5,0,0.00    
+2021-06-11 08:59:22,8.8.8.8,1443,3,1,0.21,11.5,11.3,35.5,0,0.00    
+2021-06-11 08:59:31,8.8.8.8,1450,4,1,0.28,11.5,15.9,35.5,0,0.00    
+2021-06-11 08:59:45,8.8.8.8,1460,6,2,0.41,11.5,21.7,35.5,0,0.00    
+2021-06-11 08:59:50,8.8.8.8,1463,7,1,0.48,11.5,17.0,35.5,0,0.00    
+2021-06-11 08:59:58,8.8.8.8,1469,8,1,0.54,11.5,12.8,35.5,0,0.00    
+2021-06-11 09:00:03,8.8.8.8,1474,8,0,0.54,11.7,250.6,250.6,1,0.07    
+2021-06-11 09:00:19,8.8.8.8,1488,9,1,0.60,11.7,12.5,250.6,1,0.07    
+2021-06-11 09:02:36,8.8.8.8,1621,10,1,0.62,11.7,15.7,250.6,1,0.06    
+(...)
+```
 
 ## Data Analysis
 
